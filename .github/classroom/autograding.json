@@ -1,0 +1,194 @@
+{
+  "tests": [
+    {
+      "name": "Question 1",
+      "setup": "pip3 install black numpy matplotlib pillow jupyter nbconvert jupytext",
+      "run": "python3 -m unittest notebook_v0_test.Question1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 2",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 3",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 4",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 5",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 6",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 7",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question7",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 8",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v0_test.Question8",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Question 9",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question9",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 10",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question10",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 11",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question11",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 12",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question12",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 13",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question13",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 14",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question14",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 15",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v2_test.Question15",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 16",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v2_test.Question16",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 17",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v2_test.Question17",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 18",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v2_test.Question18",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Question 19",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v2_test.Question19",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}

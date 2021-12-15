@@ -61,6 +61,8 @@ Ce dépôt git contient principalement les fichiers:
 - [⚙️ `environment.yml`](environment.yml): fichier pour créer l'environnement
   conda `python-advanced-eval` qui contient les modules Python dont vous aurez
   besoin
+  - `grader.py`: fichier qui effectue la correction automatique sur votre machine,
+    et dont la note correspond à celle calculée sur GitHub
 
 
 Votre clone de ce dépôt (votre rendu) devra au final comporter les fichiers :
@@ -102,6 +104,12 @@ Dans l'environnement conda `python-advanced-eval` :
 
     Évidemment au tout début, le squelette qu'on vous fournit ne contient aucune
     implémentation, et à ce stade de nombreux tests échouent 😭.
+
+  - Pour lancer l'ensemble des tests et calculer votre note:
+
+        python grader.py
+
+    Évidemment, vous devriez obtenir 0/20.
 
   - Prenez garde enfin à ne pas modifier les docstrings qui sont présents dans
     les fichiers ébauche, ce qui pourrait produire des résultats de test
