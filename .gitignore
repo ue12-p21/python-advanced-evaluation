@@ -1,0 +1,6 @@
+tmp
+settings.json
+.ipynb*
+__pycache__
+*.pyc
+output.txt
