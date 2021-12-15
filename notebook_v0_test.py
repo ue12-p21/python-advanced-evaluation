@@ -195,9 +195,10 @@ Goodbye! 👋""",
 
 class Question4(unittest.TestCase):
     def test_to_starboard_html(self):
+        self.maxDiff = None
         ipynb = load_ipynb("samples/hello-world.ipynb")
         self.assertEqual(
-            r"""
+            """
 <!doctype html>
 <html>
     <head>
@@ -205,14 +206,14 @@ class Question4(unittest.TestCase):
         <title>Starboard Notebook</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="icon" href="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/favicon.ico">
-        <link href="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-notebook.css" rel="stylesheet">
     </head>
     <body>
         <script>
-            window.initialNotebookContent = '# %% [markdown]\nHello world!\n============\nPrint `Hello world!`:\n# %% [python]\nprint("Hello world!")\n# %% [markdown]\nGoodbye! 👋'
+            window.initialNotebookContent = '# %% [markdown]\\nHello world!\\n============\\nPrint `Hello world!`:\\n# %% [python]\\nprint("Hello world!")\\n# %% [markdown]\\nGoodbye! 👋'
             window.starboardArtifactsUrl = `https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/`;
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-notebook.js"></script>
     </body>
 </html>
 """,
