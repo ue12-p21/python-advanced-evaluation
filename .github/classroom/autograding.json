@@ -43,7 +43,7 @@
     {
       "name": "Question 5",
       "setup": "",
-      "run": "python3 -m unittest notebook_v0_test.Question6",
+      "run": "python3 -m unittest notebook_v0_test.Question5",
       "input": "",
       "output": "",
       "comparison": "included",
