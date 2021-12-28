@@ -91,6 +91,16 @@
       "points": 1
     },
     {
+      "name": "Question 9 - Bonus",
+      "setup": "",
+      "run": "python3 -m unittest notebook_v1_test.Question9Bonus",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
       "name": "Question 10",
       "setup": "",
       "run": "python3 -m unittest notebook_v1_test.Question10",

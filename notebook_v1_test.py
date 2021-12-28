@@ -38,12 +38,15 @@ class Question9(unittest.TestCase):
         ipynb = toolbox.load_ipynb("samples/minimal.ipynb")
         nb = Notebook(ipynb)
         self.assertEqual("4.5", nb.version)
+        self.assertIsInstance(nb.cells[0], MarkdownCell)
 
+class Question9Bonus(unittest.TestCase):
     def test_build_notebook_hello_world(self):
         ipynb = toolbox.load_ipynb("samples/hello-world.ipynb")
         nb = Notebook(ipynb)
         self.assertIsInstance(nb.cells, list)
-        self.assertIsInstance(nb.cells[0], Cell)
+        for cell in nb.cells:
+            self.assertIsInstance(cell, Cell)
 
 class Question10(unittest.TestCase):
     def test_from_file(self):
