@@ -7,6 +7,11 @@ import numpy as np
 
 from notebook_v0 import *
 
+def strip_last_lines(s):
+    while s and s.endswith("\n"):
+        s = s[:-1]
+    return s
+
 class Question1(unittest.TestCase):
     def test_load_ipynb_minimal(self):
         ipynb = load_ipynb("samples/minimal.ipynb")
@@ -172,9 +177,8 @@ class Question3(unittest.TestCase):
 print("Hello world!")
 
 # %% [markdown]
-# Goodbye! 👋
-""",
-            to_percent(ipynb),
+# Goodbye! 👋""",
+            strip_last_lines(to_percent(ipynb)),
         )
 
     def test_to_starboard_text(self):
@@ -190,7 +194,7 @@ Print `Hello world!`:
 print("Hello world!")
 # %% [markdown]
 Goodbye! 👋""",
-            to_starboard(ipynb),
+            strip_last_lines(to_starboard(ipynb)),
         )
 
 class Question4(unittest.TestCase):
@@ -215,9 +219,8 @@ class Question4(unittest.TestCase):
         </script>
         <script src="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-notebook.js"></script>
     </body>
-</html>
-""",
-            to_starboard(ipynb, html=True),
+</html>""",
+            strip_last_lines(to_starboard(ipynb, html=True)),
         )
 
 class Question5(unittest.TestCase):
