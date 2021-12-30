@@ -201,9 +201,7 @@ class Question4(unittest.TestCase):
     def test_to_starboard_html(self):
         self.maxDiff = None
         ipynb = load_ipynb("samples/hello-world.ipynb")
-        self.assertEqual(
-            """
-<!doctype html>
+        begin_with = """<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -214,14 +212,18 @@ class Question4(unittest.TestCase):
     </head>
     <body>
         <script>
-            window.initialNotebookContent = '# %% [markdown]\\nHello world!\\n============\\nPrint `Hello world!`:\\n# %% [python]\\nprint("Hello world!")\\n# %% [markdown]\\nGoodbye! 👋'
+            window.initialNotebookContent = '"""
+        starboard_code = '# %% [markdown]\\nHello world!\\n============\\nPrint `Hello world!`:\\n# %% [python]\\nprint("Hello world!")\\n# %% [markdown]\\nGoodbye! 👋'
+        ends_with = """'
             window.starboardArtifactsUrl = `https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/`;
         </script>
         <script src="https://cdn.jsdelivr.net/npm/starboard-notebook@0.15.2/dist/starboard-notebook.js"></script>
     </body>
-</html>""",
-            strip_last_lines(to_starboard(ipynb, html=True)),
-        )
+</html>"""
+        html = to_starboard(ipynb, html=True)
+        self.assertIn(begin_with, html)
+        self.assertIn(starboard_code, html)
+        self.assertIn(ends_with, html)
 
 class Question5(unittest.TestCase):
     def test_clear_output(self):
