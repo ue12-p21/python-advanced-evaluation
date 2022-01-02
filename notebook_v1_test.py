@@ -40,7 +40,13 @@ class Question9(unittest.TestCase):
         ipynb = toolbox.load_ipynb("samples/minimal.ipynb")
         nb = Notebook(ipynb)
         self.assertEqual("4.5", nb.version)
+
+    def test_cell_type(self):
+        ipynb = toolbox.load_ipynb("samples/hello-world.ipynb")
+        nb = Notebook(ipynb)
         self.assertIsInstance(nb.cells[0], MarkdownCell)
+        self.assertIsInstance(nb.cells[1], CodeCell)
+        self.assertIsInstance(nb.cells[2], MarkdownCell)
 
 class Question9Bonus(unittest.TestCase):
     def test_build_notebook_hello_world(self):
