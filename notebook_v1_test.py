@@ -5,6 +5,7 @@ import unittest
 
 from notebook_v1 import *
 import notebook_v0 as toolbox
+from notebook_v0_test import strip_last_lines
 
 class Question9(unittest.TestCase):
     def test_build_code_cell(self):
@@ -101,7 +102,7 @@ print("Hello world!")
 
 # %% [markdown]
 # Goodbye! 👋"""
-            , ppp.to_py_percent())
+            , strip_last_lines(ppp.to_py_percent()))
 
 class Question14(unittest.TestCase):
     def test_outliner(self):
@@ -117,7 +118,7 @@ class Question14(unittest.TestCase):
     | print("Hello world!")
 └─▶ Markdown cell #a23ab5ac
     | Goodbye! 👋"""
-            , o.outline()
+            , strip_last_lines(o.outline())
             )
 
 if __name__ == "__main__":
